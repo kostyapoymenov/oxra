@@ -1,0 +1,31 @@
+.main-hero {
+    display: flex;
+    align-items: flex-end;
+    max-height: 550px;
+    height: 100%;
+    padding-bottom: 80px;
+    background-image: url(../img/hero_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #E7BFA8;
+}
+
+.main-hero__title {
+    position: relative;
+    padding-top: 32px;
+    @include adaptiv-font(80, 28);
+    color: $darkBlue;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    line-height: 1;
+
+    &:after {
+        content:'';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 2px;
+        background-color: $darkBlue;
+    }
+}

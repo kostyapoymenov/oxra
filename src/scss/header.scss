@@ -1,0 +1,117 @@
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    height: $headerHeightDesctop;
+    width: 100%;
+    background-color: $baseGreen;
+    transition: .15s ease-out all;
+
+    @media (max-width: $tablet) {
+        height: $headerHeightScroll;
+    }
+
+    & .container {
+        height: $headerHeightDesctop;
+
+        @media (max-width: $tablet) {
+            height: $headerHeightScroll;
+        }
+    }
+
+    &.fixed {
+        height: $headerHeightScroll;
+        transition: .15s ease-out all;
+
+        & .header__inner {
+            width: 100%;
+            height: $headerHeightScroll;
+            background-color: $baseGreen;
+            transition: .15s ease-out all;
+        }
+
+        & .container {
+            height: $headerHeightScroll;
+        }
+
+        & .header__body {
+            padding: 15px 0;
+            height: $headerHeightScroll;
+            transition: .15s ease-out all;
+        }
+    }
+}
+
+.header__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 17px;
+    height: $headerHeightDesctop;
+    padding: 27px 0;
+    transition: .15s ease-out all;
+
+    @media (max-width: $tablet) {
+        height: $headerHeightScroll;
+        padding: 15px 0;
+    }
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    max-width: 275px;
+    height: 100%;
+    transition: .15s ease-out all;
+    img {
+        height: 100%;
+        transition: .15s ease-out all;
+    }
+}
+
+.header__tel {
+    & > a {
+        padding: 10px;
+        display: inline-block;
+    }
+
+    & svg {
+        height: 32px;
+        width: 32px;
+    }
+}
+
+.burger {
+    width: 35px;
+    height: 41px;
+    position: relative;
+    overflow: hidden;
+    z-index: 300;
+    padding: 0 15px;
+    width: 60px;
+    cursor: pointer;
+}
+     
+.burger__line {
+    width: 24px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    background: $white;
+    transition: all .4s;
+    pointer-events: none;
+    border-radius: 3px;
+
+    &--1 {
+        top: 8px;
+    }
+
+    &--2 {
+        top: 19px;
+        transition: ease .4s forwards;
+    }
+
+    &--3 {
+        top: 30px;
+    }
+}
