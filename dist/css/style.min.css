@@ -167,7 +167,7 @@ body.mob-menu-active .mobile-menu {
 }
 
 .section {
-  padding: 6.3%;
+  padding: 6.3% 0;
 }
 
 .section-title {
@@ -428,6 +428,7 @@ body.mob-menu-active .mobile-menu {
 @media (max-width: 767px) {
   .footer__navigation {
     justify-content: space-around;
+    flex-direction: row-reverse;
   }
 }
 .footer__navigation ul li:not(:last-child) {
@@ -442,17 +443,17 @@ body.mob-menu-active .mobile-menu {
 }
 @media (max-width: 992px) {
   .footer__navigation a {
-    font-size: calc(12px + 0 * ((100vw - 320px) / 1260));
+    font-size: calc(14px + 0 * ((100vw - 320px) / 1260));
   }
 }
 @media (min-width: 992px) {
   .footer__navigation a {
-    font-size: calc(12px + 0 * (100vw / 1260));
+    font-size: calc(14px + 0 * (100vw / 1260));
   }
 }
 @media (min-width: 1260px) {
   .footer__navigation a {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 .footer__navigation a:hover {
@@ -527,17 +528,17 @@ body.mob-menu-active .mobile-menu {
 }
 @media (max-width: 992px) {
   .footer__address__time {
-    font-size: calc(12px + 0 * ((100vw - 320px) / 1260));
+    font-size: calc(14px + 0 * ((100vw - 320px) / 1260));
   }
 }
 @media (min-width: 992px) {
   .footer__address__time {
-    font-size: calc(12px + 0 * (100vw / 1260));
+    font-size: calc(14px + 0 * (100vw / 1260));
   }
 }
 @media (min-width: 1260px) {
   .footer__address__time {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 .footer__phones {
@@ -586,7 +587,7 @@ body.mob-menu-active .mobile-menu {
 }
 .footer__email {
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-weight: 500;
   color: #ffffff;
   text-decoration: none;
@@ -641,12 +642,23 @@ body.mob-menu-active .mobile-menu {
 .socials li {
   height: 25px;
 }
+@media (max-width: 767px) {
+  .socials li {
+    height: 40px;
+  }
+}
 .socials li a {
   display: inline-block;
   height: 100%;
   height: 25px;
   width: 25px;
   border-radius: 15px;
+}
+@media (max-width: 767px) {
+  .socials li a {
+    height: 40px;
+    width: 40px;
+  }
 }
 .socials li a:hover {
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
@@ -655,6 +667,12 @@ body.mob-menu-active .mobile-menu {
   height: 25px;
   width: 25px;
 }
+@media (max-width: 767px) {
+  .socials li svg {
+    height: 40px;
+    width: 40px;
+  }
+}
 
 .copyright {
   font-weight: 300;
@@ -662,17 +680,17 @@ body.mob-menu-active .mobile-menu {
 }
 @media (max-width: 992px) {
   .copyright {
-    font-size: calc(10px + 0 * ((100vw - 320px) / 1260));
+    font-size: calc(12px + 0 * ((100vw - 320px) / 1260));
   }
 }
 @media (min-width: 992px) {
   .copyright {
-    font-size: calc(10px + 0 * (100vw / 1260));
+    font-size: calc(12px + 0 * (100vw / 1260));
   }
 }
 @media (min-width: 1260px) {
   .copyright {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 @media (max-width: 767px) {
@@ -806,17 +824,17 @@ body.mob-menu-active .mobile-menu {
 }
 @media (max-width: 992px) {
   .manufacturer__text {
-    font-size: calc(13px + 0 * ((100vw - 320px) / 1260));
+    font-size: calc(14px + 0 * ((100vw - 320px) / 1260));
   }
 }
 @media (min-width: 992px) {
   .manufacturer__text {
-    font-size: calc(13px + 0 * (100vw / 1260));
+    font-size: calc(14px + 0 * (100vw / 1260));
   }
 }
 @media (min-width: 1260px) {
   .manufacturer__text {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 .manufacturer__links a {
@@ -831,17 +849,17 @@ body.mob-menu-active .mobile-menu {
 }
 @media (max-width: 992px) {
   .manufacturer__links a {
-    font-size: calc(13px + 0 * ((100vw - 320px) / 1260));
+    font-size: calc(14px + 0 * ((100vw - 320px) / 1260));
   }
 }
 @media (min-width: 992px) {
   .manufacturer__links a {
-    font-size: calc(13px + 0 * (100vw / 1260));
+    font-size: calc(14px + 0 * (100vw / 1260));
   }
 }
 @media (min-width: 1260px) {
   .manufacturer__links a {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 .manufacturer__links a:hover {
@@ -924,16 +942,16 @@ body.mob-menu-active .mobile-menu {
 }
 @media (max-width: 992px) {
   .advantages_text {
-    font-size: calc(13px + 0 * ((100vw - 320px) / 1260));
+    font-size: calc(14px + 0 * ((100vw - 320px) / 1260));
   }
 }
 @media (min-width: 992px) {
   .advantages_text {
-    font-size: calc(13px + 0 * (100vw / 1260));
+    font-size: calc(14px + 0 * (100vw / 1260));
   }
 }
 @media (min-width: 1260px) {
   .advantages_text {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
