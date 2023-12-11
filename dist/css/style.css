@@ -1321,6 +1321,7 @@ body.mob-menu-active .mobile-menu {
 @media (max-width: 992px) {
   .main-hero {
     min-height: calc(100vh - 70px);
+    padding-bottom: 120px;
   }
 }
 
