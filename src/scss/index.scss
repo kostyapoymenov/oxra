@@ -9,6 +9,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #E7BFA8;
+
+    @media (max-width: $tablet) {
+        min-height: calc(100vh - $headerHeightScroll);
+    }
 }
 
 .main-hero__title {

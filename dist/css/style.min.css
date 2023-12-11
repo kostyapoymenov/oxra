@@ -1318,6 +1318,11 @@ body.mob-menu-active .mobile-menu {
   background-repeat: no-repeat;
   background-color: #E7BFA8;
 }
+@media (max-width: 992px) {
+  .main-hero {
+    min-height: calc(100vh - 70px);
+  }
+}
 
 .main-hero__title {
   position: relative;
