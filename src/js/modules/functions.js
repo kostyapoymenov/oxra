@@ -71,9 +71,15 @@ function findOffset(element) {
 export function scrollFixedHeader() {
   var stickyHeader = document.getElementsByClassName("header");
   var headerOffset = findOffset(stickyHeader);
+  var bodyScrollTop =
+    document.documentElement.scrollTop - 70 || document.body.scrollTop;
+
+  if (bodyScrollTop > headerOffset.top) {
+    stickyHeader[0].classList.add("fixed");
+  }
 
   window.onscroll = function () {
-    var bodyScrollTop =
+    bodyScrollTop =
       document.documentElement.scrollTop - 70 || document.body.scrollTop;
 
     if (bodyScrollTop > headerOffset.top) {

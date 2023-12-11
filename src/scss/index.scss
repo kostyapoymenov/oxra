@@ -3,6 +3,7 @@
     align-items: flex-end;
     max-height: 550px;
     height: 100%;
+    min-height: calc(100vh - $headerHeightDesctop);
     padding-bottom: 80px;
     background-image: url(../img/hero_bg.png);
     background-size: cover;

@@ -1,3 +1,5 @@
+import sal from "sal.js";
+
 // Кастомная функция из папки с модулями
 import * as flsFunctions from "./modules/functions.js";
 
@@ -11,4 +13,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
   flsFunctions.isWebp();
   flsFunctions.toggleMobMenu();
   flsFunctions.scrollFixedHeader();
+  sal();
 });

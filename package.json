@@ -48,6 +48,7 @@
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-group-css-media-queries": "^1.2.2",
-    "gulp-webpcss": "^1.1.1"
+    "gulp-webpcss": "^1.1.1",
+    "sal.js": "^0.8.5"
   }
 }
